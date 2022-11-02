@@ -1,0 +1,367 @@
+{% extends 'books/master.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <!-- start of navigation links to other pages -->
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="#">Home/</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark  " href="#">Books/</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end of navigation links to other pages -->
+
+    <div class="row border-top ">
+        <!-- start of filter products  -->
+        <div class="col-md-2 border-end">
+            <h6>CATEGORIES</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Fiction
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Non-fiction
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Literery
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Science(Fiction & Thriller)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Mystery
+                </label>
+            </div>
+            <!-- end of categories filter  -->
+
+            <!-- start of brands filter  -->
+            <div class="brands border-top">
+                <h6>AUTHORS</h6>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        chethan bhagath
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Siddharth Maheshwari
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        shivendra kapoor
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        cafe morgan
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        paulo coelho
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10 pt-2">
+            <div class="row">
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images/lynch2.jpg' %}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260 </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center" data-toggle="modal"
+                                data-target="#lymph"> View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static\images\alache.png'%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center" data-toggle="modal"
+                                data-target="#missing">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//an island.jpg'%}"class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//great circle.jpg'%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//cafe.jpg'%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//over my dead.jpg'%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//answers.jpg'%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//atomic.png '%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//lynch2.jpg'%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//lynch2.jpg'%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{% static 'user_static/images//lynch2.jpg'%}" class="img-fluid img1  " alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
+                            <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260
+                            </h6>
+                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <a href="#" class="btn btn1 btn-warning text-center"><i
+                                    class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="modal fade" id="lymph">
+        <div class="modal-dialog">
+            <div class="modal-content " style="width: 145%;">
+                <div class="modal-header ">
+                    <h5 class="modal-title text-center text-dark" id="exampleModalLabel"
+                        style="font-family: 'Courier New', Courier, monospace;font-size:28px; font-weight: bold;">
+                        Book
+                        Details
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body " style="background-color: #fafafa;">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <img src="{% static 'user_static/images//lynch2.jpg'%}" class="card-img-top" alt="..."
+                                    style="width:100%; height: 333px;">
+                            </div>
+                            <div class="col-md-6">
+                                <h3>LYNCHPIN</h3>
+                                <p style="font-size: 28px;"> author:Siddarth Maheshwari</p>
+
+                                <div class="wrapper">
+                                    <input type="checkbox" id="st1" value="1" />
+                                    <label for="st1"></label>
+                                    <input type="checkbox" id="st2" value="2" />
+                                    <label for="st2"></label>
+                                    <input type="checkbox" id="st3" value="3" />
+                                    <label for="st3"></label>
+                                    <input type="checkbox" id="st4" value="4" />
+                                    <label for="st4"></label>
+                                    <input type="checkbox" id="st5" value="5" />
+                                    <label for="st5"></label>
+                                </div>
+                                <hr>
+                                <h4 style="display: inline;" class="p-1">Rs.260 </h4><br><br>
+                                <h6 class="font-weight-bolder">Mystery</h6>
+
+                                <br><br>
+                                <button type="button" id="btn_add" class="btn btn-warning" href=""
+                                    data-dismiss="modal"><i class="fa-solid fa-heart"></i></button>
+                            </div>
+                            <!-- end of product details -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="modal fade" id="missing">
+        <div class="modal-dialog">
+            <div class="modal-content " style="width: 145%;">
+                <div class="modal-header ">
+                    <h5 class="modal-title text-center text-dark" id="exampleModalLabel"
+                        style="font-family: 'Courier New', Courier, monospace;font-size:28px; font-weight: bold;">
+                        Book
+                        Details
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body " style="background-color: #fafafa;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- start of product pictures -->
+                            <div class="col-md-6">
+                                <img src="{% static 'yyuser_static\images\alache.png'%}" class="card-img-top" alt="..."
+                                    style="width:100%">
+                            </div>
+                            <!-- end of product pictures -->
+                            <!-- start product details -->
+                            <div class="col-md-6">
+                                <h3>400</h3>
+                                <p style="font-size: 28px;"> author:chetan bhagath</p>
+
+                                <div class="wrapper">
+                                    <input type="checkbox" id="st1" value="1" />
+                                    <label for="st1"></label>
+                                    <input type="checkbox" id="st2" value="2" />
+                                    <label for="st2"></label>
+                                    <input type="checkbox" id="st3" value="3" />
+                                    <label for="st3"></label>
+                                    <input type="checkbox" id="st4" value="4" />
+                                    <label for="st4"></label>
+                                    <input type="checkbox" id="st5" value="5" />
+                                    <label for="st5"></label>
+                                </div>
+                                <hr>
+                                <h4 style="display: inline;" class="p-1">Rs.260 </h4><br><br>
+                                <h6 class="font-weight-bolder">Mystery</h6>
+
+                                <br><br>
+                                <button type="button" id="btn_add" class="btn btn-warning" href=""
+                                    data-dismiss="modal"><i class="fa-solid fa-heart"></i></button>
+
+                            </div>
+                            <!-- end of product details -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
